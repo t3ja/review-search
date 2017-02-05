@@ -1,0 +1,25 @@
+{
+  "name": "review-search",
+  "version": "1.0.0",
+  "description": "A simple search module comparing brute force and Trie-based implementation of String search through Amazon review data.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "'repo'"
+  },
+  "author": "Raviteja",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "~3.4.6",
+    "body-parser": "^1.8.3",
+    "express": "~4.10.1",
+    "mongodb": "^1.4.12",
+    "natural": "^0.1.28",
+    "response-time": "^2.3.2",
+    "winston": "^0.8.0"
+  }
+}

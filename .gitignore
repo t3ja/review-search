@@ -3,6 +3,9 @@ logs
 *.log
 npm-debug.log*
 
+#Local index DS
+.DS_Store
+
 # Runtime data
 pids
 *.pid
