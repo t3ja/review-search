@@ -8,7 +8,10 @@ Steps to setup
 - Install node dependencies via ``` npm install ```
 - Start the local server via ``` npm start ```
 
-1. /search/?q
+
+
+
+URL - /search/?q
 - RESTful GET API to fetch top 20 documents from the dataset through brute force search.
 - Response header 'X-Response-Time' denotes the time taken by the API
 - Example
@@ -16,7 +19,11 @@ Steps to setup
 $ curl -s -D - 'http://localhost:3000/search/?q=different%20terms' -o ./out-brute.txt
 ```
 
-1. /searchTrie/?q
+
+
+
+
+URL - /searchTrie/?q
 - RESTful GET API to fetch top 20 documents from the dataset through search implemented an a Trie data structure.
 - The Trie is built during application init. All the tokens in the dataset are inserted into the trie while also saving the list of indexes of documents which contain the tokens. This is a variation of the conventional trie. At the edge of a node, an array of indexes of all documents containing the Key are saved. For retrieval, the list of ids at the end of each term are fetched from the Trie and the corresponding documents from MongoDB are then scored and returned.
 - Response header 'X-Response-Time' denotes the time taken by the API
@@ -24,6 +31,9 @@ $ curl -s -D - 'http://localhost:3000/search/?q=different%20terms' -o ./out-brut
 ```
 $ curl -s -D - 'http://localhost:3000/searchTrie/?q=different%20terms' -o ./out-trie.txt
 ```
+
+
+
 
 TODO
 -UI to compare the search APIs
